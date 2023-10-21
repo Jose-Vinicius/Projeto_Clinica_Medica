@@ -1,0 +1,89 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos da seção de banner */
+section.banner {
+    text-align: center;
+}
+
+section.banner img {
+    max-width: 100%;
+}
+
+/* Estilos da seção de serviços */
+section.servicos {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+section.servicos h2 {
+    font-size: 24px;
+}
+
+section.servicos ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Estilos da seção "Sobre Nós" */
+section.sobre-nos {
+    padding: 20px;
+}
+
+section.sobre-nos h2 {
+    font-size: 24px;
+}
+
+/* Estilos da seção de contato */
+section.contato {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+section.contato h2 {
+    font-size: 24px;
+}
+
+address {
+    font-style: normal;
+    font-size: 16px;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #003366;
+    color: #fff;
