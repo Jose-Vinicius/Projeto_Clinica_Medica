@@ -171,3 +171,77 @@ footer {
 footer p{
     padding: 5px 0 10px 0;
 }
+
+/*estilização formulário*/
+
+.form-paciente{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.form-titulo{
+    margin: 20px;
+    font-size: 36px;
+}
+
+
+.form-titulo-dadosPaciente{
+    font-size: 24px;
+    margin: 0 20px;
+}
+
+.form-titulo-dadosConsulta{
+    font-size: 24px;
+    
+}
+
+.form-dadosPaciente, .form-dadosConsulta{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+}
+
+.form-dadosPaciente div:first-child{
+    margin-right: 40px;
+}
+
+.form-dadosPaciente_contato{
+    display: flex;
+    flex-direction:column;
+}
+
+.form-dadosPaciente_contato label, .form-dadosPaciente_endereco label, .form-dadosConsulta label{
+    padding: 10px 0;
+}
+
+.form-dadosPaciente_endereco{
+    display: flex;
+    flex-direction:column;
+}
+
+.submitButton{
+    margin: 0 20px;
+    color: white;
+    font-weight: 600;
+    background-color: #003366;
+    border: none;
+    border-radius: 5px;
+    width: 20%;
+    height: 5%;
+    box-shadow: 5px 4px 5px 1px gray;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.submitButton:hover{
+    transform: scale(1.1);
+}
+
+.form-dadosConsulta{
+    margin: 0;
+    flex-direction: column;
+    justify-content: left;
+}
+
+

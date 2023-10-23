@@ -23,87 +23,113 @@
         <h1>Clínica Médica <br> Health and Wellness</h1>
     </header>
     <body>
-        <form action="#" method="post">
-            <Label>
-                Digite seu nome completo:
-                <input type="text" name="nomePaciente" placeholder="Ex: José Vinicius" required>
-            </Label>
-            <Label>
-                Digite seu CPF sem . ou -
-                <input type="text" name="cpfPaciente" placeholder="Ex: 22233344455" required>
-            </Label>
-            <Label>
-                Digite seu telefone:
-                <input type="tel" name="telefonePaciente" placeholder="45998445533" required>
-            </Label>
-            <Label>
-                Digite seu email:
-                <input type="email" name="emailPaciente" placeholder="Ex: joãozinho@email.com" required>
-            </Label>
-            <Label>
-                Digite sua data de nascimento:
-                <input type="date" name="dataNascimentoPaciente">
-            </Label>
-            <label>
-                Escolha seu gênero:
-                <select name="genero">
-                    <option value="">Qual seu gênero ?</option>
-                    <option value="Masculino">Masculino</option>
-                    <option value="Feminino">Feminino</option>
-                </select>
-            </label>
-            
-            <label>
-                Digite seu pais:
-                <input type="text" name="paisPaciente" placeholder="Ex: Brasil" required>
-            </label>
-            <label>
-                Digite seu estado:
-                <input type="text" name="estadoPaciente" placeholder="Ex: Parana" required>
-            </label>
-            <label>
-                Digite seu CEP:
-                <input type="text" name="CEPPaciente" placeholder="Ex: 86789000">
-            </label>          
-            <label>
-                Digite o nome da sua rua:
-                <input type="text" name="ruaPaciente" placeholder="Ex: Lacerda Magalhaes" required>
-            </label>          
-            <label>
-                Digite seu bairro:
-                <input type="text" name="bairroPaciente" placeholder="Ex: Berenice">
-            </label>
-            <label>
-                Escolha a especialidade:
-                <select name="especialidades">
-                    <option value="">Escolha um especialista</option>
-                    <option value="Ginecologista">Ginecologista</option>
-                    <option value="Clinico geral">Clinico geral</option>
-                    <option value="Obstetra">Obstetra</option>
-                    <option value="Neurologista">Neurologista</option>
-                    <option value="Cardiologista">Cardiologista</option>
-                </select>
-            </label>
+        <h2 class="form-titulo">Cadastro paciente</h2>
+        <form action="#" method="post" class="form-paciente">
+            <h3 class="form-titulo-dadosPaciente">Dados cliente</h3>
+            <div class="form-dadosPaciente">
+                <div class="form-dadosPaciente_contato">
+                    <Label>
+                        Digite seu nome completo:
+                        <input type="text" name="nomePaciente" placeholder="Ex: José Vinicius" required>
+                    </Label>
+                    <Label>
+                        Digite seu CPF sem . ou -:
+                        <input type="text" name="cpfPaciente" placeholder="Ex: 22233344455" required>
+                    </Label>
+                    <Label>
+                        Digite seu telefone:
+                        <input type="tel" name="telefonePaciente" placeholder="45998445533" required>
+                    </Label>
+                    <Label>
+                        Digite seu email:
+                        <input type="email" name="emailPaciente" placeholder="Ex: joãozinho@email.com" required>
+                    </Label>
+                    <Label>
+                        Digite sua data de nascimento:
+                        <input type="date" name="dataNascimentoPaciente">
+                    </Label>
+                    <label>
+                        Escolha seu gênero:
+                        <select name="genero">
+                            <option value="">Qual seu gênero ?</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                        </select>
+                    </label>
+                </div>
                 
-            <label>
-                Escolha uma data para a consulta:
-                <input type="date" required>
-            </label>
+                <div class="form-dadosPaciente_endereco">
+                    <label>
+                        Digite seu pais:
+                        <input type="text" name="paisPaciente" placeholder="Ex: Brasil" required>
+                    </label>
+                    <label>
+                        Digite seu estado:
+                        <input type="text" name="estadoPaciente" placeholder="Ex: Parana" required>
+                    </label>
+                    <label>
+                        Digite seu CEP:
+                        <input type="text" name="CEPPaciente" placeholder="Ex: 86789000">
+                    </label>          
+                    <label>
+                        Digite o nome da sua rua:
+                        <input type="text" name="ruaPaciente" placeholder="Ex: Lacerda Magalhaes" required>
+                    </label>          
+                    <label>
+                        Digite seu bairro:
+                        <input type="text" name="bairroPaciente" placeholder="Ex: Berenice">
+                    </label>
+                </div>
+            </div>
             
-            <label>
-                Escolha um horário para a consulta:
-                <select name="horariosDisponiveis">
-                    <option value="">Escolha um horário</option>
-                    <option value="08:45">08:45 Hr</option>
-                    <option value="10:15">10:15 Hr</option>
-                    <option value="14:30">14:30 Hr</option>
-                    <option value="15:15">15:15 Hr</option>
-                    <option value="16:50">16:50 Hr</option>
-                </select>
-            </label>
-            <button>Enviar</button>
+            <div class="form-dadosConsulta">
+                <h3 class="form-titulo-dadosConsulta">Dados da consulta</h3>
+                <label>
+                    Escolha a especialidade:
+                    <select name="especialidades">
+                        <option value="">Escolha um especialista</option>
+                        <option value="Ginecologista">Ginecologista</option>
+                        <option value="Clinico geral">Clinico geral</option>
+                        <option value="Obstetra">Obstetra</option>
+                        <option value="Neurologista">Neurologista</option>
+                        <option value="Cardiologista">Cardiologista</option>
+                    </select>
+                </label>
+                    
+                <label>
+                    Escolha uma data para a consulta:
+                    <input type="date" required>
+                </label>
+                
+                <label>
+                    Escolha um horário para a consulta:
+                    <select name="horariosDisponiveis">
+                        <option value="">Escolha um horário</option>
+                        <option value="08:45">08:45 Hr</option>
+                        <option value="10:15">10:15 Hr</option>
+                        <option value="14:30">14:30 Hr</option>
+                        <option value="15:15">15:15 Hr</option>
+                        <option value="16:50">16:50 Hr</option>
+                    </select>
+                </label>
+            </div>
+            
+            <button class="submitButton">Enviar</button>
         </form>
-        
     </body>
+    <!-- Rodapé da página -->
+    <footer>
+        <!-- Seção de contato -->
+        <section class="contato">
+            <h2>Entre em Contato</h2>
+            <p>Estamos à disposição para atender às suas necessidades de saúde. Entre em contato conosco.</p>
+            <address>
+                <p>Telefone: (43) 3332-3132</p>
+                <p>Email: contato@clinihealth.com</p>
+                <p>Endereço: Rua XXXXXXX, 123 - Londrina, PR</p>
+            </address>
+         </section>
+        <p>&copy; 2023 Clínica Médica Health and Wellness</p>
+    </footer>
 </body>
 </html>
