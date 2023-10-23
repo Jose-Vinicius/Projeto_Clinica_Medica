@@ -7,11 +7,10 @@
 body {
     font-family: 'Cabin', sans-serif;
     margin: 0;
-    padding: 0 20px;
+    padding: 0;
     max-width: 100vw;
     height: 100vh;
-    width: 100%;
-    overflow-x: hidden
+    width: 99%;
 }
 
 body p, li{
@@ -25,7 +24,7 @@ header {
     text-align: center;
     max-height: 200px;
     max-width: 100vw;
-    width: 100%;
+    width: 99%;
     padding: 1%;
     margin: 0;
 }
@@ -36,7 +35,7 @@ header h1 {
 }
 
 nav ul {
-    width: 100vw;
+    width: 100%;
     height: 10%;
     list-style: none;
     padding: 0;
@@ -72,11 +71,13 @@ nav a {
 
 /* Estilos da seção de banner */
 section.banner {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 section.banner img {
-    max-width: 100%;
+    width: calc(100% + 26px);
 }
 
 /* Estilos da seção de serviços */
@@ -84,7 +85,8 @@ section.servicos {
     background-color: #f0f0f0;
     padding: 20px;
     max-width: 100vw;
-    width: 100%;
+    width: 98%;
+    margin: 0;
 }
 
 section.servicos h2 {
@@ -96,21 +98,32 @@ section.servicos h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100%;
 }
 
 .card{
     display: flex;
-    background-color: #bdbdbd;
+    background-color: #dadada;
     flex-direction: column;
     flex-wrap: wrap;
-    
     width: 300px;
     text-align: center;
     align-items: center;
+    width: 15%;
+    height: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 2px black;
 }
 
 .card-img{
     width: 50px;
+    padding: 20px 0 40px 0;
+}
+
+.card-info{
+    color: rgb(0, 0, 0);
 }
 
 
@@ -118,6 +131,7 @@ section.servicos h2 {
 section.sobre-nos {
     padding: 20px;
     text-align: justify;
+    font-size: 20px;
 }
 
 section.sobre-nos h2 {
@@ -151,7 +165,7 @@ footer {
     margin-bottom: -20px;
     padding: 1%;
     max-width: 100vw;
-    width: 100%;
+    width: 99%;
 }
 
 footer p{
