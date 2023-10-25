@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="../assets/icons/icon_home.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../../assets/icons/icon_home.png" type="image/x-icon">
         <title>Clínica Médica Health and Wellness</title>
     
         <!-- Vinculando o arquivo CSS externo ao HTML -->
@@ -24,7 +24,7 @@
     </header>
     <section>
         <h2 class="form-titulo">Cadastro paciente</h2>
-        <form  action="" id="form-paciente" class="form-paciente">
+        <form action="../pages/formulario_consulta.html" id="form-paciente" class="form-paciente">
             <h3 class="form-titulo-dadosPaciente">Dados cliente</h3>
             <div class="form-dadosPaciente">
                 <div class="form-dadosPaciente_contato">
@@ -34,23 +34,23 @@
                     </Label>
                     <Label>
                         Digite seu CPF sem . ou -:
-                        <input type="text" name="cpfPaciente" placeholder="Ex: 22233344455" id="cpfPaciente">
+                        <input type="text" name="cpfPaciente" placeholder="Ex: 22233344455" id="cpfPaciente" required>
                     </Label>
                     <Label>
                         Digite seu telefone:
-                        <input type="tel" name="telefonePaciente" placeholder="45998445533" id="telefonePaciente">
+                        <input type="tel" name="telefonePaciente" placeholder="45998445533" id="telefonePaciente" required>
                     </Label>
                     <Label>
                         Digite seu email:
-                        <input type="email" name="emailPaciente" placeholder="Ex: joãozinho@email.com" id="emailPaciente">
+                        <input type="email" name="emailPaciente" placeholder="Ex: joãozinho@email.com" id="emailPaciente" required>
                     </Label>
                     <Label>
                         Digite sua data de nascimento:
-                        <input type="date" name="dataNascimentoPaciente" id="dataNascimentoPaciente">
+                        <input type="date" name="dataNascimentoPaciente" id="dataNascimentoPaciente" required>
                     </Label>
                     <label>
                         Escolha seu gênero:
-                        <select name="generoPaciente" id="generoPaciente">
+                        <select name="generoPaciente" id="generoPaciente" required>
                             <option value="">Qual seu gênero ?</option>
                             <option value="Masculino">Masculino</option>
                             <option value="Feminino">Feminino</option>
@@ -61,23 +61,23 @@
                 <div class="form-dadosPaciente_endereco">
                     <label>
                         Digite seu pais:
-                        <input type="text" name="paisPaciente" placeholder="Ex: Brasil" id="paisPaciente">
+                        <input type="text" name="paisPaciente" placeholder="Ex: Brasil" id="paisPaciente" required>
                     </label>
                     <label>
                         Digite seu estado:
-                        <input type="text" name="estadoPaciente" placeholder="Ex: Parana" id="estadoPaciente">
+                        <input type="text" name="estadoPaciente" placeholder="Ex: Parana" id="estadoPaciente" required>
                     </label>
                     <label>
                         Digite seu CEP:
-                        <input type="text" name="CEPPaciente" placeholder="Ex: 86789000" id="CEPPaciente">
+                        <input type="text" name="CEPPaciente" placeholder="Ex: 86789000" id="CEPPaciente" required>
                     </label>          
                     <label>
                         Digite o nome da sua rua:
-                        <input type="text" name="ruaPaciente" placeholder="Ex: Lacerda Magalhaes" id="ruaPaciente">
+                        <input type="text" name="ruaPaciente" placeholder="Ex: Lacerda Magalhaes" id="ruaPaciente" required>
                     </label>          
                     <label>
                         Digite seu bairro:
-                        <input type="text" name="bairroPaciente" placeholder="Ex: Berenice" id="bairroPaciente">
+                        <input type="text" name="bairroPaciente" placeholder="Ex: Berenice" id="bairroPaciente" required>
                     </label>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                 <h3 class="form-titulo-dadosConsulta">Dados da consulta</h3>
                 <label>
                     Escolha a especialidade:
-                    <select name="especialidades" id="especialidades">
+                    <select name="especialidades" id="especialidades" required>
                         <option value="">Escolha um especialista</option>
                         <option value="Ginecologista">Ginecologista</option>
                         <option value="Clinico geral">Clinico geral</option>
@@ -98,12 +98,12 @@
                     
                 <label>
                     Escolha uma data para a consulta:
-                    <input type="date" name="dataConsulta" id="dataConsulta"> 
+                    <input type="date" name="dataConsulta" id="dataConsulta" required> 
                 </label>
                 
                 <label>
                     Escolha um horário para a consulta:
-                    <select name="horariosDisponiveis" id="horariosDisponiveis">
+                    <select name="horariosDisponiveis" id="horariosDisponiveis" required>
                         <option value="">Escolha um horário</option>
                         <option value="08:45">08:45 Hr</option>
                         <option value="10:15">10:15 Hr</option>

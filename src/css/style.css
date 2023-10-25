@@ -263,4 +263,42 @@ footer p{
     justify-content: left;
 }
 
+.ficha h1{
+    font-size: 36px;
+    margin: 20px;
+}
+
+.ficha-consulta{
+    margin: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0080ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.ficha-consulta-dadosContato, .ficha-consulta-endereco, .ficha-consulta-dadosConsulta{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80vw;
+}
+
+.ficha-consulta-dadosContato div, .ficha-consulta-endereco div, .ficha-consulta-dadosConsulta div{
+    margin: 20px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.ficha-consulta-dadosContato h2, .ficha-consulta-endereco h2, .ficha-consulta-dadosConsulta h2{
+   color:#fff;
+   font-family: 'Cabin', sans-serif;
+}
+
+.ficha-consulta-dadosContato span, .ficha-consulta-endereco span, .ficha-consulta-dadosConsulta span{
+    color:#fff;
+    font-family: 'Poppins', sans-serif;
+ }
+
 
