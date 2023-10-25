@@ -180,6 +180,25 @@ footer p{
     height: 100vh;
 }
 
+.form-paciente h2, .form-paciente h3{
+    font-family: 'Cabin', sans-serif;
+}
+
+.form-paciente label{
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-paciente input, .form-paciente select{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 4vh;
+    padding: 0 10px;
+}
+
+.form-paciente input:focus, .form-paciente select:focus{
+    outline: none;
+}
+
 .form-titulo{
     margin: 20px;
     font-size: 36px;
@@ -235,7 +254,7 @@ footer p{
 }
 
 .submitButton:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .form-dadosConsulta{
