@@ -301,4 +301,23 @@ footer p{
     font-family: 'Poppins', sans-serif;
  }
 
+.sobreNos{
+    margin: 40px 30px;
+}
+.sobreNos h1{
+    font-size: 36px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.sobreNos h2{
+    font-family: 'Cabin', sans-serif;
+    font-size: 24px;
+}
+
+.sobreNos p, .sobreNos li{
+    font-size: 16px;
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+}
+
 
