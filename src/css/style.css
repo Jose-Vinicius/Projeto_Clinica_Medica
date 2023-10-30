@@ -195,10 +195,6 @@ footer p{
     padding: 0 10px;
 }
 
-.form-paciente input:focus, .form-paciente select:focus{
-    outline: none;
-}
-
 .form-titulo{
     margin: 20px;
     font-size: 36px;
@@ -326,3 +322,14 @@ footer p{
 }
 
 
+.form-dadosPaciente input:focus, .form-dadosConsulta input:focus{
+    outline: none;
+}
+
+input[data-valid="false"]{
+    border: 1px solid red;
+}
+
+input[data-valid="true"]{
+    border: 1px solid rgb(0, 255, 55);
+}

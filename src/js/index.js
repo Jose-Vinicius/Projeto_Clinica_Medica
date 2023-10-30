@@ -2,7 +2,7 @@
 const urlParametros = new URLSearchParams(window.location.search);
 const parametros = Object.fromEntries(urlParametros.entries());
 
-//Variaveis para "Pegar as os elementos html"
+//Variaveis para "Pegar as os elementos html da ficha do paciente"
 let nomePaciente = document.getElementById("ficha-nome");
 let cpfPaciente = document.getElementById("ficha-cpf");
 let telefonePaciente = document.getElementById("ficha-telefone");

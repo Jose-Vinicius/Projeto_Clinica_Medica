@@ -31,15 +31,15 @@
                 <div class="form-dadosPaciente_contato">
                     <Label>
                         Digite seu nome completo:
-                        <input type="text" name="nomePaciente" placeholder="Ex: José Vinicius" id="nomePaciente" required>
+                        <input type="text" name="nomePaciente" placeholder="Ex: José Vinicius" id="nomePaciente" minlength="3" maxlength="64" required>
                     </Label>
                     <Label>
                         Digite seu CPF sem . ou -:
-                        <input type="text" name="cpfPaciente" placeholder="Ex: 22233344455" id="cpfPaciente" required>
+                        <input type="text" name="cpfPaciente" placeholder="Ex: 22233344455" id="cpfPaciente" maxlength="11" minlength="11" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required>
                     </Label>
                     <Label>
                         Digite seu telefone:
-                        <input type="tel" name="telefonePaciente" placeholder="45998445533" id="telefonePaciente" required>
+                        <input type="tel" name="telefonePaciente" placeholder="45998445533" id="telefonePaciente" maxlength="11" minlength="11" required>
                     </Label>
                     <Label>
                         Digite seu email:
@@ -47,7 +47,7 @@
                     </Label>
                     <Label>
                         Digite sua data de nascimento:
-                        <input type="date" name="dataNascimentoPaciente" id="dataNascimentoPaciente" required>
+                        <input type="date" name="dataNascimentoPaciente" id="dataNascimentoPaciente" required >
                     </Label>
                     <label>
                         Escolha seu gênero:
@@ -62,23 +62,23 @@
                 <div class="form-dadosPaciente_endereco">
                     <label>
                         Digite seu pais:
-                        <input type="text" name="paisPaciente" placeholder="Ex: Brasil" id="paisPaciente" required>
+                        <input type="text" name="paisPaciente" placeholder="Ex: Brasil" id="paisPaciente" minlength="2" required>
                     </label>
                     <label>
                         Digite seu estado:
-                        <input type="text" name="estadoPaciente" placeholder="Ex: Parana" id="estadoPaciente" required>
+                        <input type="text" name="estadoPaciente" placeholder="Ex: Parana" id="estadoPaciente" minlength="2" required>
                     </label>
                     <label>
                         Digite seu CEP:
-                        <input type="text" name="CEPPaciente" placeholder="Ex: 86789000" id="CEPPaciente" required>
+                        <input type="text" name="CEPPaciente" placeholder="Ex: 86789000" id="CEPPaciente" minlength="8" maxlength="8" required>
                     </label>          
                     <label>
                         Digite o nome da sua rua:
-                        <input type="text" name="ruaPaciente" placeholder="Ex: Lacerda Magalhaes" id="ruaPaciente" required>
+                        <input type="text" name="ruaPaciente" placeholder="Ex: Lacerda Magalhaes" id="ruaPaciente" minlength="2" required>
                     </label>          
                     <label>
                         Digite seu bairro:
-                        <input type="text" name="bairroPaciente" placeholder="Ex: Berenice" id="bairroPaciente" required>
+                        <input type="text" name="bairroPaciente" placeholder="Ex: Berenice" id="bairroPaciente" minlength="2">
                     </label>
                 </div>
             </div>
