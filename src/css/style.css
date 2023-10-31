@@ -172,6 +172,37 @@ footer p{
     padding: 5px 0 10px 0;
 }
 
+footer .contato-image{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    justify-content: center;
+}
+
+footer .contato-image-img{
+    width: 2%;
+    display: flex;
+    justify-content: right;
+}
+
+footer .contato-image-img img{
+    width: 3vw;
+    margin-right: -60vw;
+}
+
+@keyframes balanco-horizontal {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+}
+
+.contato-image-img:hover{
+    animation: balanco-horizontal 1s infinite;
+}
+
+
 /*estilização formulário*/
 
 .form-paciente{

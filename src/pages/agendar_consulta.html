@@ -13,11 +13,10 @@
     <header>
         <nav>
             <ul>
+                <!--Barra de navegação-->
                 <li><a href="../../index.html">Página Inicial</a></li>
-                <li><a href="#servicos-section">Serviços</a></li>
                 <li><a href="/src/pages/agendar_consulta.html">Agendar uma consulta</a></li>
                 <li><a href="/src/pages/about.html"">Sobre Nós</a></li>
-                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
         <h1>Clínica Médica <br> Health and Wellness</h1>
@@ -28,14 +27,15 @@
         <form action="../pages/formulario_consulta.html" id="form-paciente" class="form-paciente">
             <h3 class="form-titulo-dadosPaciente">Dados cliente</h3>
             <div class="form-dadosPaciente">
+                <!--Seção para cadastro do paciente-->
                 <div class="form-dadosPaciente_contato">
                     <Label>
                         Digite seu nome completo:
                         <input type="text" name="nomePaciente" placeholder="Ex: José Vinicius" id="nomePaciente" minlength="3" maxlength="64" required>
                     </Label>
                     <Label>
-                        Digite seu CPF sem . ou -:
-                        <input type="text" name="cpfPaciente" placeholder="Ex: 22233344455" id="cpfPaciente" maxlength="11" minlength="11" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required>
+                        Digite seu CPF:
+                        <input type="text" name="cpfPaciente" placeholder="Ex:222.333.444-55" id="cpfPaciente" maxlength="15" minlength="11" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required>
                     </Label>
                     <Label>
                         Digite seu telefone:
@@ -58,7 +58,7 @@
                         </select>
                     </label>
                 </div>
-                
+                <!--Seção para cadastro do endereço do paciente-->
                 <div class="form-dadosPaciente_endereco">
                     <label>
                         Digite seu pais:
@@ -82,7 +82,7 @@
                     </label>
                 </div>
             </div>
-            
+            <!--Seção para cadastro da consulta-->
             <div class="form-dadosConsulta">
                 <h3 class="form-titulo-dadosConsulta">Dados da consulta</h3>
                 <label>
@@ -127,10 +127,17 @@
             <address>
                 <p>Telefone: (43) 3332-3132</p>
                 <p>Email: contato@clinihealth.com</p>
-                <p>Endereço: Rua XXXXXXX, 123 - Londrina, PR</p>
+                <p>Endereço: Rua São Miguel, 157 - Campo Largo, PR</p>
             </address>
          </section>
-        <p>&copy; 2023 Clínica Médica Health and Wellness</p>
+        <div class="contato-image">
+            <div class="contato-image-copy">
+                <p>&copy; 2023 Clínica Médica Health and Wellness</p>
+            </div> 
+            <div class="contato-image-img">
+                <a href="https://wa.me/+5545998121611" target="_blank"><img src="/assets/images/whatsapp_icon.png" alt="Whatsapp contato"></a>
+            </div>
+        <div>
     </footer>
 </body>
 <script type="module" src="../js/index.js"></script>
