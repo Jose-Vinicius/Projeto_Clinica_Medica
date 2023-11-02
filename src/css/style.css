@@ -23,9 +23,8 @@ header {
     text-align: center;
     max-height: 200px;
     max-width: 100vw;
-    width: 100%;
-    padding: 1%;
-    margin: 0;
+    width: 100vw;
+    padding: 20px 0;
 }
 
 header h1 {
@@ -84,7 +83,6 @@ section.banner{
 /* Estilos da seção de serviços */
 section.servicos {
     background-color: #f0f0f0;
-    max-width: 100vw;
     width: 100vw;
     padding: 20px 0;
     height: 40vh;
@@ -167,12 +165,12 @@ footer {
     background-color: #003366;
     color: #fff;
     margin-bottom: -20px;
-    padding: 1%;
-    max-width: 100vw;
-    width: 99%;
+    padding: 0;
+    width: 100vw;
 }
 
 footer p{
+    
     padding: 5px 0 10px 0;
 }
 
@@ -183,15 +181,19 @@ footer .contato-image{
     justify-content: center;
 }
 
+footer .contato-image .contato-image-copy{
+    font-size: .7rem;
+}
+
 footer .contato-image-img{
     width: 2%;
     display: flex;
     justify-content: right;
 }
 
-footer .contato-image-img img{
-    width: 3vw;
-    margin-right: -60vw;
+footer .contato-image .contato-image-img img{
+    width: 5vw;
+    margin-right: -10vw;
 }
 
 @keyframes balanco-horizontal {
@@ -377,11 +379,8 @@ input[data-valid="true"]{
 
 
 @media only screen and (min-width: 320px) and (max-width: 480px){
-    body{
-        background-color: red;
-    }
     section.banner{
-        width: 100vw;
+        width: 101%;
         height: 20vh;
         background-image: url("../../assets/images/banner.jpg");
         background-repeat: no-repeat;
@@ -390,15 +389,17 @@ input[data-valid="true"]{
     }
     
     section.servicos{
-        height: 80vh
+        width: 100vw;
+        height: calc(100vh + 100px)
     }
 
     .group-cards{
-        height: 20vh;
+        height: 80vh;
     }
 
     .card{
-        width: 30vw;
+        width: 25vw;
+        height: 30vh;
         margin: 40px 20px;
     }
 
@@ -408,7 +409,7 @@ input[data-valid="true"]{
 
     footer .contato-image-img img{
         width: 5vw;
-        margin-right: -10vw;
+        margin-right: -1vw;
     }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px){
