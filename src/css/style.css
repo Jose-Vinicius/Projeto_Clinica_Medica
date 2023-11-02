@@ -415,9 +415,6 @@ input[data-valid="true"]{
     }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px){
-    body{
-        background-color: rgb(255, 0, 200);
-    }
     .card{
         max-width: 160px;
         min-width: 100px;
@@ -442,10 +439,6 @@ input[data-valid="true"]{
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px){
-    body{
-        background-color: rgb(76, 0, 255);
-    }
-
     .card{
         max-width: 160px;
         min-width: 100px;
@@ -466,9 +459,7 @@ input[data-valid="true"]{
     }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1200px){
-    body{
-        background-color: rgb(255, 238, 0);
-    }
+    
     .card{
         max-width: 180px;
         min-width: 100px;
@@ -489,9 +480,7 @@ input[data-valid="true"]{
     }
 }
 @media only screen and (min-width: 1201px) {
-    body{
-        background-color: rgb(6, 92, 78);
-    }
+    
     .card{
         max-width: 200px;
         min-width: 100px;
