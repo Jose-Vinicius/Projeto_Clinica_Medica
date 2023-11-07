@@ -2,21 +2,7 @@
 const urlParametros = new URLSearchParams(window.location.search);
 const parametros = Object.fromEntries(urlParametros.entries());
 
-//Variaveis para "Pegar as os elementos html da ficha do paciente"
-let nomePaciente = document.getElementById("ficha-nome");
-let cpfPaciente = document.getElementById("ficha-cpf");
-let telefonePaciente = document.getElementById("ficha-telefone");
-let emailPaciente = document.getElementById("ficha-email");
-let dataNascimentoPaciente = document.getElementById("ficha-nascimento");
-let generoPaciente = document.getElementById("ficha-genero")
-let paisPaciente = document.getElementById("ficha-pais");
-let estadoPaciente = document.getElementById("ficha-estado");
-let CEPPaciente = document.getElementById("ficha-cep");
-let ruaPaciente = document.getElementById("ficha-rua");
-let bairroPaciente = document.getElementById("ficha-bairro");
-let especialidades = document.getElementById("ficha-especialista");
-let dataConsulta = document.getElementById("ficha-dataConsulta");
-let horariosDisponiveis = document.getElementById("ficha-horariosConsulta");
+let fichaConsulta = document.getElementById("ficha-consulta");
 
 //Função responsável por adicionar um zero para datas aonde somente teria 1 digito ex: 5 -> 05
 function inserir2digitosData(data){
@@ -33,21 +19,46 @@ function transformarData(dataFormatar){
     return `${dia}/${mes}/${ano}`
 }
 
+//função responsável por verificar se a string retornada é uma data, e formata-la
+function verificarSeUmaData(str){
+    //indexOf ira verificar se a string contem um '-' se não contiver retorna -1
+    if(str.indexOf('-') !== -1){
+        console.log(str.indexOf('-') !== -1)
+        return transformarData(str)
+    } else{
+        return str
+    }
+}
 
-//Inserir as os dados em tela, apos estarem formatados
-nomePaciente.innerHTML = parametros.nomePaciente;
-cpfPaciente.innerHTML = parametros.cpfPaciente;
-telefonePaciente.innerHTML = parametros.telefonePaciente;
-emailPaciente.innerHTML = parametros.emailPaciente;
-generoPaciente.innerHTML = parametros.generoPaciente;
-dataNascimentoPaciente.innerHTML = transformarData(parametros.dataNascimentoPaciente);
-paisPaciente.innerHTML = parametros.paisPaciente;
-estadoPaciente.innerHTML = parametros.estadoPaciente;
-CEPPaciente.innerHTML = parametros.CEPPaciente;
-ruaPaciente.innerHTML = parametros.ruaPaciente;
-bairroPaciente.innerHTML = parametros.bairroPaciente;
-especialidades.innerHTML = parametros.especialidades;
-dataConsulta.innerHTML = transformarData(parametros.dataConsulta);
-horariosDisponiveis.innerHTML = parametros.horariosDisponiveis;
+//função que transforma os parametros recebidos da URL
+function transformarObjeto(obj){
+    let arrayObj = [];
+    for(const key in obj){
+        //regex que separa as palavras que estão com letra maiúscula das com letra minuscula e adiciona um espaço em branco entre elas   
+        let alterarTitulo = key.match(/([A-Z]?[^A-Z]*)/gm).slice(0, -1).join(" ")
+        let objetoTransformado = {
+            'chave': key, 
+            'identificador': alterarTitulo.toUpperCase(),
+            'valor': verificarSeUmaData(obj[key])}
+        arrayObj.push(objetoTransformado)
+    }
+    return arrayObj
+}
 
+//Inserir os dados em tela, apos estarem formatados
+function inserirElementosNaTela(){
+    let array = transformarObjeto(parametros);
+    for (let i = 0; i < array.length; i++){
+        //insere os elementos gerados dentro do elemento pai, apos o ultimo elemento filho
+        fichaConsulta.insertAdjacentHTML("beforeend",
+        `<div>
+            <h2>${array[i].identificador}</h2>
+            <hr>
+            <span>${array[i].valor}</span>
+        </div>`
+        );
+    }
+}
+
+inserirElementosNaTela();
 
