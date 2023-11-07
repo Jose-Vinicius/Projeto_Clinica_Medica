@@ -300,39 +300,36 @@ footer .contato-image .contato-image-img img{
 /*Estilização dados ficha*/
 
 .ficha h1{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 20px;
 }
 
 .ficha-consulta{
-    margin: 30px 40px;
-    display: flex;
-    flex-direction: column;
-    background-color: #0080ff;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.ficha-consulta-dadosContato, .ficha-consulta-endereco, .ficha-consulta-dadosConsulta{
+    margin: 20px 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80vw;
+    background-color: #0080ff;
+    padding: 40px;
+    border-radius: 10px;
+    justify-content: center;
 }
 
-.ficha-consulta-dadosContato div, .ficha-consulta-endereco div, .ficha-consulta-dadosConsulta div{
+.ficha-consulta div{
     margin: 20px 10px;
     border: 2px solid black;
     border-radius: 5px;
     padding: 10px 20px;
+    width: 20vw;
 }
 
-.ficha-consulta-dadosContato h2, .ficha-consulta-endereco h2, .ficha-consulta-dadosConsulta h2{
-   color:#fff;
-   font-family: 'Cabin', sans-serif;
+.ficha-consulta div h2{
+    font-size: 1.4rem;
+    color:#fff;
+    font-family: 'Cabin', sans-serif;
 }
 
-.ficha-consulta-dadosContato span, .ficha-consulta-endereco span, .ficha-consulta-dadosConsulta span{
+.ficha-consulta div span{
     color:#fff;
     font-family: 'Poppins', sans-serif;
  }
@@ -429,6 +426,14 @@ input[data-valid="true"]{
     .ficha-consulta {
         margin: 30px 10px;
     }
+
+    .ficha-consulta div{
+        width: 50vw;
+    }
+
+    .ficha-consulta div h2{
+        font-size: .9rem;
+    }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px){
     .card{
@@ -466,6 +471,14 @@ input[data-valid="true"]{
         margin: 30px 20px;
         width: 50vw;
         padding: 10px;
+    }
+
+    .ficha-consulta div{
+        width: 50vw;
+    }
+
+    .ficha-consulta div h2{
+        font-size: 1rem;
     }
 
 }
