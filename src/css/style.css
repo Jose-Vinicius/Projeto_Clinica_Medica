@@ -362,6 +362,16 @@ footer .contato-image .contato-image-img img{
 }
 
 
+.autores{
+    display: flex;
+    flex-direction: column;
+}
+
+.autores span{
+    padding: 10px 0;
+}
+
+
 .form-dadosPaciente input:focus, .form-dadosConsulta input:focus{
     outline: none;
 }
