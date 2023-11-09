@@ -22,7 +22,7 @@ function transformarData(dataFormatar){
 //função responsável por verificar se a string retornada é uma data, e formata-la
 function verificarSeUmaData(str){
     //indexOf ira verificar se a string contem um '-' se não contiver retorna -1
-    if(str.indexOf('-') !== -1){
+    if(str.indexOf('-') !== -1 && str.indexOf('.') == -1){
         console.log(str.indexOf('-') !== -1)
         return transformarData(str)
     } else{
